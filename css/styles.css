@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: aquamarine;
+    margin-top: 100px;
+}
+#slider {
+    background: rgb(0, 42, 255);
+    width: 300px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    box-shadow: 8px 8px gray;
+}
+
+#slider h2{
+    border-radius: 50%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    text-align: center;
+    background-color: green;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    left: 0;
+    /* Pure CSS - Set up transition */
+    transition: all 1s;
+}
+/* Images visual*/
+img{
+    height: 300px;
+    width: 300px;
+}
+/* Add visual style to toggle on/off with JS */
+.on {
+    left: 200px;
+    background-color: black;
+}
+/*Make page go Dark Mode*/
+.toggleBG{
+    background-color: black;
+}
+.toggleColor{
+    color: azure;
+}
+
+.hidden{
+    display: none;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply animation to visible class */
+.visible {
+animation: reveal 8s linear;
+animation-fill-mode: forwards;
+}
