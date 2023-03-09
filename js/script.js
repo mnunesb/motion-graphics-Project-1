@@ -15,7 +15,7 @@ $(document).ready(function(){
             $("#secret").removeClass("hidden");
         }
         else {
-            $("img").attr("src", "/img/lightbulb-on.png");
+            $("img").attr("src", "img/lightbulb-on.png");
             $IsItOn = "on";
             $("#secret").removeClass("visible");
             $("#secret").addClass("hidden");
